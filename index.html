@@ -4,37 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock-Paper-Scissors</title>
+    <title>Rock-Paper-Scissors | BCA Project</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <!-- Menu -->
     <div id="menu">
         <h2>Select Game Mode</h2>
-        <button onclick="startGame('computer')">Play vs Computer</button>
-        <button onclick="startGame('2')">2 Players</button>
+        <div class="menu-buttons">
+            <button onclick="startGame('computer')">Play vs Computer</button>
+            <button onclick="startGame('2')">2 Players</button>
+        </div>
     </div>
 
-    <!-- Game -->
     <div id="game" style="display:none;">
         <h1>Rock - Paper - Scissors</h1>
 
-        <!-- Choices -->
         <div id="container">
             <div class="choice" id="rock">
+                <span class="choice-text">Click Me</span>
                 <img src="images/rock.png" alt="Rock">
             </div>
             <div class="choice" id="paper">
+                <span class="choice-text">Click Me</span>
                 <img src="images/paper.png" alt="Paper">
             </div>
             <div class="choice" id="scissors">
+                <span class="choice-text">Click Me</span>
                 <img src="images/scissors.png" alt="Scissors">
             </div>
         </div>
 
-        <!-- Scoreboard -->
         <div class="score-board">
             <div class="score">
                 <p id="user-score">0</p>
@@ -46,15 +48,13 @@
             </div>
         </div>
 
-        <!-- Message -->
         <div class="msg-container">
             <p id="msg">Select your move to start the game.</p>
         </div>
 
-        <!-- Controls -->
         <div class="controls">
-            <button onclick="resetGame()">Reset</button>
-            <button onclick="backToMenu()">Back to Menu</button>
+            <button class="ctrl-btn" onclick="resetGame()">Reset Game</button>
+            <button class="ctrl-btn" onclick="backToMenu()">Back to Menu</button>
         </div>
     </div>
 
